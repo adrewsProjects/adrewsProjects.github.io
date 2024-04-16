@@ -6,7 +6,7 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-assets>
-        <a-asset-item id="mybox" src="box.gltf"</a-asset-item>
+        <a-asset-item id="mybox" src="box.gltf"></a-asset-item>
       </a-assets>
       <a-marker preset="hiro">
         <!-- we use cors proxy to avoid cross-origin problems -->
@@ -15,19 +15,19 @@
           https://arjs-cors-proxy.herokuapp.com/ is now offline, Heroku has dismissed all his free plans from November 2022.
           You need to host your own proxy and use it instead. The proxy is based on CORS Anywhere (see https://github.com/Rob--W/cors-anywhere).
           ⚠️⚠️⚠️
-        
+        -->
         <a-entity
           position="0 0 0"
           scale="0.01 0.01 0.01"         
-          gltf-model="mybox"
-        ></a-entity>
-        -->
+          gltf-model="mybox">
+        </a-entity>
         
+        <!--
         <a-box
           position="0 0 0"
           color="yellow"
         </a-box>
-        
+        -->
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
