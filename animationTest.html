@@ -14,7 +14,11 @@
         <a-asset-item id="mybox" src="Box.gltf"></a-asset-item>
       </a-assets>
       <a-marker type='barcode' value='1'>
-        <a-entity scale="0.1 0.1 0.2" gltf-model="#mybox"></a-entity>        
+        <a-entity 
+          scale="0.1 0.1 0.2" 
+          gltf-model="#mybox"
+          <a-animation attribute="rotation" repeat="indefinite"></a-animation>
+          ></a-entity>        
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
