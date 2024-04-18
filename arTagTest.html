@@ -4,18 +4,21 @@
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
+    <!--
+      Tag being used here is 'tag1.png' and is a 3-by-3 April Tag generated from this site:
+      https://au.gmented.com/app/marker/marker.php
+
+      They call these markers "barcodes" (not the 1d kind but the 2d kind, i.e. QR Codes)
+
+      It's not clear what the "code" means, i.e. where value='1' below, that's the "code" that was 
+      set when the tag was generated. This value can range from 0 to 63.
+    -->
     <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
       <a-assets>
         <a-asset-item id="mybox" src="Box.gltf"></a-asset-item>
       </a-assets>
       <a-marker type='barcode' value='1'>
         <a-entity scale="0.1 0.1 0.2" gltf-model="#mybox"></a-entity>        
-        <!--
-        <a-box
-          position="0 0 0"
-          color="yellow"
-        </a-box>
-        -->
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
