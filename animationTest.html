@@ -16,7 +16,11 @@
         <a-entity 
           scale="0.1 0.1 0.2" 
           gltf-model="#mybox"
-          animation="property: rotation; duration: 3000; to: 0 360 0"
+          <a-animation attribute="rotation"
+               to="0 360 0"
+               dur="1000"
+               fill="forwards"
+               repeat="indefinite"></a-animation>
           ></a-entity>        
       </a-marker>
       <a-entity camera></a-entity>
