@@ -22,7 +22,7 @@
 
     img {
       display: block;        /* makes it a block element, so text stops above/below */
-      width: 100%;           /* fills the container */
+      width: 90%;           /* fills the container */
       max-width: 100%;       /* never overflows */
       height: auto;          /* preserves aspect ratio */
       margin: 1.5rem auto;
@@ -64,42 +64,21 @@
     p {
       margin-bottom: 0;
     }
-
-    .gifBox {
-      overflow: hidden;
-      height: 180px; 
-      line-height: 0; 
-      margin: 0; 
-      padding: 0
-    }
-
-    .gifImg {
-      display: block; 
-      width: 90%
-    }
   </style>
 </head>
 <body>
-  <h2>The paddle wheel flowmeter</h2>
+  <h2>The paddle wheel flow meter</h2>
   <p>The object on the stand in front of you is called a <b>paddle wheel flow meter</b>. Fluid usually flows from right to left through the sensor, like this:</p>
-  <div class="gifBox">
-  <img class="gifImg" src="opaque_loop.gif" alt="Paddle wheel flow meter">
-  </div>
+  <img src="opaque_loop.gif" alt="Paddle wheel flow meter">
 
   <p>Behind the front cover is a sensor and circuit board. Here the <bPink>sensor</bPink> is shown in pink and its <bYell>primary data line</bYell> is shown in yellow:</p>
-  <div class="gifBox">
-  <img class="gifImg" src="sensor_loop.gif" alt="Paddle wheel flow sensor">
-  </div>
+  <img src="sensor_loop.gif" alt="Paddle wheel flow sensor">
 
-  <p>Removing another layer reveals the fluid chamber which contains a paddle wheel, magnet, and fluid. As the fluid flows from right to left it pushes on the paddle wheel, causing it and the magnet to rotate:
-  <div class="gifBox">
-  <img class="gifImg" src="impeller_loop.gif" alt="Fluid chamber">
-  </div>
+  <p>Removing another layer reveals the fluid chamber which contains a paddle wheel, magnet, and fluid. As the fluid flows from right to left it pushes on the paddle wheel, causing it and the magnet to rotate:</p>
+  <img src="impeller_loop.gif" alt="Fluid chamber">
 
   <p>The <bBlue>north</bBlue> and <bRed>south</bRed> poles of the magnet are shown in blue and red. As the magnet rotates near the sensor, the sensor's <bYell>data line</bYell> produces an electrical signal which switches between high and low:</p>
-  <div class="gifBox">
-  <img class="gifImg" src="signalDetail_loop.gif" alt="Alternating signal">
-  </div>
+  <img src="signalDetail_loop.gif" alt="Alternating signal">
 
   <p>The rate at which the electrical signal alternates between high and low is proportional to the rate at which fluid flows through the device. Under normal operation the device is closed and fully sealed like in the first image. <br><br> That's how a paddle wheel flow meter works!</p>
 </body>
