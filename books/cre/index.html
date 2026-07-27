@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<style>
+.code {
+  font-family: monospace;
+  background-color: #f0f0f0;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+.thanks { 
+  font-style: italic;
+  color:#666;
+}
+</style>
+
+<html>
+<head><title>CENG 113 SP26</title></head>
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<body>
+<h1>Introduction to Chemical Reaction Engineering with MATLAB</h1>
+<h2>Dr. Aaron Drews</h2>
+
+<p>Welcome to the homepage for Introduction to Chemical Reaction Engineering with MATLAB, a textbook for a one-quarter undergraduate course in chemical reaction engineering.</p>
+<p>On this page you can download the book for free, review errata, and submit feedback.</p>
+
+<h2>Textbook</h2>
+<p>Download the textbook here:<a target="_blank" href="https://adrewsprojects.github.io/books/cre/drewsCREmatlab.pdf">Introduction to Chemical Reaction Engineering with MATLAB</a></p>
+
+<h2>Errata</h2>
+<p>The list below summarizes known mistakes and typos in the texbook. Newer versions have been corrected to eliminate noted mistakes in older versions (i.e., the errata of Version 1.0 does not apply to Version 1.1, but the reverse is not true).</p>
+    
+<p>To submit new comments please use this Google Form: <a target="_blank" href="https://forms.gle/S2bMtQai1rskwqDm9">Feedback Form</a>.</p>
+
+
+<h3>Version 1.1 Errata</h3>
+<ul>
+    <li><b>Pg. 48</b>, The Equilibrium Reactor (Ch. 2): The numerical value of \(K_1\) is 7.477e11, not 2.477e11. The calculated value of \(K_a\) is correct. <span class="thanks">(thanks Jessica!)</span></li>
+    <li><b>Pg. 85</b>, The Continuously Stirred Tank Reactor (Ch. 4): The proper name is the <i>Continuous</i> Stirred Tank Reactor, not Continuous<i>ly</i>. Although the reactor is indeed stirred continuously, the word "continuous" is to distinguish the reactor model from the "batch" alternative.</li>
+    <li><b>Pg. 264</b>, Special Cases of the PBR (Ch. 10): In the solution for Example 10.3 the problem statement incorrectly specifies that the liquid's viscosity should be 1e-5 Pa-s; it should be 1e-3. Separately, the Reynolds number should be 12730, not 1273 (the corresponding \(f\) and \(f_p\) values are correct).</li>
+</ul>
+
+<h3>Version 1.0 Errata</h3>
+<ul>
+    <li><b>Pg. 57</b>, The Equilibrium Reactor (Ch. 2): The summation term for \(\Delta H_{T_R}^{\circ}\) is missing the stoichiometric coefficient; it should be \(\sum\limits_{i=\text{A}}^\text{Z} \nu_i \Delta H_{f,i}^{\circ}\). <span class="thanks">(thanks Jared!)</span></li>
+    <li><b>Pg. 114</b>, The Continuously Stirred Tank Reactor (Ch. 4): The numerator in the calculation of \(L\) should be 0.021, not 0.0.021. <span class="thanks">(thanks Anthony!)</span></li>
+    <li><b>Pg. 296</b>, Multireactor Systems (Ch. 11): "It can also be useful to rearrange Equation (11.<b>12</b>)..."</li>
+    <li><b>Pg. 345</b>, Experimental Determination of Rate Laws (Ch. 13): Lines 5 and 6 of the code should both be <span class="code">plot(t, ...)</span> and not <span class="code">plot(log(t), ...)</span> or <span class="code">plot(1./t, ...)</span>.</li>
+
+</ul>
+
+
+</body>
+</html>
